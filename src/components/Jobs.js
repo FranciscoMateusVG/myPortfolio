@@ -35,7 +35,7 @@ const Jobs = () => {
           {jobs.map((item, index) => {
             return (
               <button
-                key={item.strapiId}
+                key={index}
                 className={`job-btn ${index === value && "active-btn"}`}
                 onClick={() => setValue(index)}
               >
@@ -48,9 +48,9 @@ const Jobs = () => {
           <h3>{position}</h3>
           <h4>{company}</h4>
           <p className="job-date">{data}</p>
-          {desc.map(item => {
+          {desc.map((item, index) => {
             return (
-              <div key={item.id} className="job-desc">
+              <div key={index} className="job-desc">
                 <FaAngleDoubleRight className="job-icon" /> <p>{item.text}</p>
               </div>
             )

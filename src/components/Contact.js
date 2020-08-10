@@ -5,12 +5,7 @@ const contact = () => {
     <section className="contact-page">
       <article className="contact-form">
         <h3>get in touch</h3>
-        <form
-          name="contact portfolio"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
+        <form name="contact portfolio" method="POST" data-netlify="true">
           <input
             type="text"
             name="name"
@@ -28,8 +23,7 @@ const contact = () => {
             rows="5"
             placeholder="message"
             className="form-control"
-          />
-          <div data-netlify-recaptcha="true"></div>
+          ></textarea>
           <button type="submit" className="submit-btn btn">
             Submit Here
           </button>

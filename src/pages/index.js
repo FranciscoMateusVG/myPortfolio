@@ -7,6 +7,7 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 import Blogs from "../components/Blogs"
+import SEO from "../components/SEO"
 
 export default () => {
   const {
@@ -16,6 +17,7 @@ export default () => {
 
   return (
     <Layout>
+      <SEO title="Home" description="This my Portfolio HomePage" />
       <Hero />
       <Services />
       <Jobs />
